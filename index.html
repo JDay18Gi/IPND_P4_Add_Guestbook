@@ -1,14 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 {% autoescape true %}
-<html>
+<html lang="en">
   <head>
-    <title>Jason's Notes</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jason D. Girard</title>
+    <link rel="stylesheet" href="css/style2.css">
   </head>
-
+  
 <body>
+
+<!--Header-->
+<div class="container-fluid">
+  <div class="row">
+    <div class="two-col">
+     <img class="logo" src="images/jason_picture.jpg" alt="picture of Jason">    
+      <h1>Jason D. Girard</h1>
+      <div class="subheader">Front-End Web Developer</div> 
+    </div>
+  </div> 
+
+<hr>
+
+
+<!--First Row (Featured Work)-->
+
+  <div class="row">
+  <p class="fea-wrk">Featured Work</p>
+      <div class="three-col">
+        <div class="fea-desc"></div>
+          
+          <a href="http://conqueredillness.org/"><img class="featured_image" src="images/CI.png" alt="Website Porftolio Image 2"></a>
+          <p class="fea-desc">Conqured Illness</p>
+          
+          <a href="http://www.discernmentgroup.com/"><img class="featured_image" src="images/DGI.png" alt="Website Porftolio Image 3"></a>
+          <p class="fea-desc">Discernment Group</p>
+          
+          <a href="http://renaisserve.com/"><img class="featured_image" src="images/REN.png" alt="Website Porftolio Image 1"></a>
+           <p class="fea-desc">Renaisserve</p>
+      
+      </div>
+  </div>
+<hr>
+
+
+ <div class="row notes">
+      
   <div class="center">
-    <h3>Table of Contents</h3>
+    <h2>Table of Contents</h2>
     <a href="#lesson1">Lesson 1: The Basics of the Web and HTML</a><br>
     <a href="#lesson2">Lesson 2: Structure and HTML</a><br>
     <a href="#lesson3">Lesson 3: Adding CSS Style</a><br>
@@ -17,14 +58,15 @@
     <a href="#lesson6">Lesson 6: Funcitons</a><br>
     <a href="#lesson7">Lesson 7: Decisions and Repetition</a><br>
     <a href="#lesson8">Lesson 8: Structured Data</a><br>
-    <a href="#lesson9">Lesson 9: The Full Stack</a><br>
+    <a href="#lesson9">Lesson 9: Understanding OOP</a><br>
+    <a href="#lesson10">Lesson 10: JavaScript</a><br>
     <a href="#resources">Appendix: Cool Resources</a><br>
   </div>
   
 
   <br><br><br><br>
 
-  <h1>Lesson Notes</h1>
+  <h2>Lesson Notes</h2>
 
   
   <div class="lesson">
@@ -194,14 +236,13 @@
             <li> Computers use compilers or interpreters (programs that know hot to read different coding languages.)
             <li>Python is an interpreter and the Python language is interpreted to make sense to the computer so it knows what to do.
             <li>There are 5 ways to think like a programmer:</li>
+        </ul>
               <p class='listo'>1. Procedural Thinking</p>
               <p class='listo'>2. Technological Empathy</p>
               <p class='listo'>3. Abstract Thinking</p>
               <p class='listo'>4. Debugging</p>
               <p class='listo'>5. Systems Thinking</p>
 
-        </p>
-        </ul>
         <br>
 
         <p>
@@ -213,7 +254,6 @@
                <li>People used to think computers could only do math but they can do a <b><em>LOT</em></b> more than that!</li>
           </ul>
         <br>
-  </div>
 </div>
 
 
@@ -226,7 +266,6 @@
             <li>Variables can be assigned any meaning we want. They can be assigned the meaning of numbers, lists of numbers, formulas, words, phrases, even huge pages of text or code. 
             <li> Variables conveniently allow long complex statements to be contained in just a word or letter.
             <li>Python is an interpreter and the Python language is interpreted to make sense to the computer so it knows what to do.
-        </p>
         </ul>
         <br>
 
@@ -239,7 +278,6 @@
                <li><b>x.find('a')</b> will find the first occurance of 'a' in x.</li>
           </ul>
         <br>
-  </div>
 </div>
 
 
@@ -252,6 +290,7 @@
           <li>Functions have to be made (defined) before they can be used.</li>
           <li>Calling a function means using the function.</li>
           <li>Here is a function that multiples a list of numbers:</li>
+          </ul>
             <p class='listo'>def product_list(n):</p>
               <p class='listo'> &nbsp;&nbsp;&nbsp;&nbsp; x=0 </p>
               <p class='listo'> &nbsp;&nbsp;&nbsp;&nbsp;result=1 </p>
@@ -259,8 +298,6 @@
               <p class='listo'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result=result*n[x]</p>
               <p class='listo'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x=x+1</p>
               <p class='listo'>&nbsp;&nbsp;&nbsp;&nbsp;return result</p>
-
-          </ul>
         <br>
   </div>
 </div>
@@ -270,19 +307,18 @@
     <h2 id="lesson7">Lesson 7: Decisions and Repetition</h2>
       <div>
           <ul class="list">
-          <li>Functions can use comparisons < and ></li>
+          <li>Functions can use comparisons &lt; and ></li>
           <li> <b>!=</b> means not equal</li>
           <li> <b>==</b> means equal (like in math, not assignment like in Python)</li>
           <li> <b>if</b> statements can be used in functions for example:</li>
+          </ul>
             <p class='listo'>def bigger (a,b):</p>
               <p class='listo'> &nbsp;&nbsp;&nbsp;&nbsp; if a>b: </p>
               <p class='listo'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return a </p>
               <p class='listo'> &nbsp;&nbsp;&nbsp;&nbsp;return b</p>
-          </ul>
         <br>
   </div>
 </div>
-
 
 
 <div class="lesson">
@@ -294,6 +330,7 @@
           <li>Lists, unlike strings, can be manipulated</li>
           <li>Loops can be used for lists similar to how while is used for strings.</li>
           <li>Here is an example:</li>
+          </ul>
             <p class='listo'>def greatest(p):</p>
               <p class='listo'> &nbsp;&nbsp;&nbsp;&nbsp; big=0 </p>
               <p class='listo'> &nbsp;&nbsp;&nbsp;&nbsp; for i in p: </p>
@@ -301,33 +338,116 @@
               <p class='listo'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; big=i </p>
               <p class='listo'>&nbsp;&nbsp;&nbsp;&nbsp; return big </p>
 
-          </ul>
         <br>
   </div>
 </div>
 
 
 <div class="lesson">
-    <h2 id="lesson9">Lesson 9: The Full Stack</h2>
+    <h2 id="lesson9">Lesson 9: Understanding OOP</h2>
       <div>
           <ul class="list">
-          <h3>Servers</h3>
-          <li>Servers are computers designed to provide information to other computers. On the internet, computers make requests to servers via HTTP (Hypertext Transfer Protocol). These requests are mostly “GET” requests. Servers respond to the requests with the requested files/data. For example, when I visit a website my computer sends out a request to the servers of that site to send me the files of that website. What shows up on my computer is the files shared from the website’s server.</li>
-         
-         <h3>Website Input</h3>
-          <li>While most interaction with website servers are merely GET requests, there are also POST requests. These can be comments for example which become a part of the website. These inputs present possible security concerns due to the fact that they are adding code to the server. Servers need to make sure that the data they accept is not garbage or worse something malicious.</li>
+          
+          <li>Object-oriented programming is a form of programming based on the concepts of objects. In laymans terms, the OOP method is a method of using many smaller programs to work together to accomplish the overall talk of the program. Program tasks are broken down into small parts that are completed by functions and processes. These objects are often contained in classes (see below).  The OOP method causes us to think about tasks in their parts. By breaking down tasks into their parts we can identify classes that apply to the procedures we need to accomplish and then create objects for those classes that are specific to our needs.</li>
+          
+          <li>Vocabulary is a very important part of OOP.</li>
+          </ul>
+          
+          <br>
 
-          <h3>Repetition and HTML Templates</h3>
-          <li>A good way to explain the “do not repeat yourself” principle for coding is when you need to make a right turn and instead of turning right you make three left turns. You eventually get to the same direction but you didn’t need to do all that extra work. Repetition wastes time, space, slows down websites, and can even create more vulnerability to malicious attack.</li>
-          <li>HTML templates are one great way to accomplish this. Instead of repeating HTML code on several pages, one HTML template can be referenced on multiple pages. This also makes changes much easier since the changes only need to be made once! </li>
+          
 
+          <h3>Classes</h3>
+
+          Classes are like a blueprint for an object.
+          <ul class="list">
+          <li>They can be used to make many different types of buildings but all the buildings that come form the same blueprint will have many of the same features (same number of rooms, same structure, same shape, etc.). This is also true in coding. Classes are the category of design or function while instances/objects (below) are the the actual specific buildings that arise from the blueprints.</li>
+          <li>Classes are like neatly packaged boxes. They contain valuable information for different categories of programs.</li>
+          <li>When using classes. Usually the class information is coded in one file and the call is coded in another file.</li>
+          </ul>       
+          <br>
+
+          <h3>Objects</h3>
+
+          <ul class="list">
+
+          <li>As described above objects are specific instances of the blueprint of a class. They are functions, variables, or a data structure that fits into one of the classes. Each object will have all the qualities that are defined by its class but also some more specific qualities that make it unique.
+          </li>
+          </ul>
+
+          <br>
+
+          <h3>Instance Methods</h3>
+          <ul class="list">
+          <li>Are functions that have self for the first value. They are associated with a specific object.</li>
+          </ul><br>
+
+          <h3>Instance Variables</h3>
+          <ul class="list">
+          <li>Are variables that are associated with all instances in a class. They are like class variables.</li></ul><br>
+
+          <h3>Standard Library and importing data</h3>
+          <ul class="list">
+          <li>Python has a standard library of classes. Other classes can be used from other outside sources by the use of import.</li></ul><br>
+
+          <h3>Module</h3>
+          <ul class="list">
+          <li>is a segment of code that logically fits together. Modules can define functions and can be imported to use at a later time</li>
+          </ul>
+
+
+          <br><br>
+          
+          
+
+          <h3>Class Variables</h3>
+          <ul class="list">
+          <li>is a segment of code that logically fits together. Modules can define functions and can be imported to use at a later time</li>
+          </ul><br>
+
+          <h3>OOP in CSS and HTML</h3>
+          <ul class="list">
+          <li>The principles OOP are used in web development as well. CSS, for example, provides code modules which can be reused over and over again throughout the website.  This article provides some great examples of using OOP principles for CSS coding. This approach removes all unnecessary repetition.</li>
+
+          <li>Unfortunately HTML is not an object oriented language so there is not effective means of using object oriented methods with it. This is why CSS is so valuable to avoiding repetition.</li>
+          </ul><br>
+
+          <h3>Python Resources:</h3>
+        
+          <ul class="list">
+            <li><a href="http://learnpythonthehardway.org/book/">Learn Python</a></li>
+            <li><a href="https://s3.amazonaws.com/udacity-hosted-downloads/ud036/How+to+get+the+address+of+a+file+on+a+Mac.pdf">Finding File Locations on a Mac</a></li>
+            <li><a href="https://docs.python.org/2/">Python 2.7.9 documentation:</a></li>
+          </ul>
+  </div>
+</div>
+<br>
+
+
+
+
+
+<div class="lesson">
+    <h2 id="lesson10">Lesson 10: JavaScript</h2>
+      <div>
+          <ul class="list">
+          <li>JavaScript can be used to give websites “life”. It manipulates HTML and CSS giving websites functionality and less of a static feel.</li>
+          <li>Java is added to an html document by text such as the following:</li>
+          <span>
+          &nbsp;&nbsp;&nbsp;&nbsp; &lt;script scr=“js/jQuery.js”&gt;&lt;/script&gt;
+         </span>
+          <li>Vanilla is normal JavaScript. jQuery is a special pre-made JavaScript library.</li>
+          <li>JavaScript can be experimented with in console section of the developer tools in most browsers.</li>
+          <li>console.log(“string”) is like the print feature for JavaScript</li>
+          <li>variables in JavaScript function a lot like variables in Python, but they require a “var” keyword.</li>
+          <li>Like Python, JavaScript does math. One of the neat math features JavaScript can do is called modulus (computed with a “%”) it returns the remainder from the division of two numbers.</li>
           </ul>
         <br>
   </div>
 </div>
 
 
-
+<div>
 
       <div class="lesson">
         
@@ -344,33 +464,12 @@
         <li><a href="http://jigsaw.w3.org/css-validator/#validate_by_input">CSS Validation</a></li>
         <li><a href="https://www.udacity.com/course/viewer#!/c-none/l-300029886/e-299271807/m-299271808">Python Playground</a></li>
         </ul>
-</div>  
 
+        
+      </div>  
+    </div>
+  </div>
 
-<div>
-    <form action="/sign?guestbook_name={{ guestbook_name }}" method="post">
-        <font>Leave a comment!</font>
-        <div><textarea name="content" rows="5%" cols="100%"></textarea></div>
-        <div><input type="submit" value="Comment"></div>
-    </form>
-    <br>
-    <a href="{{ url|safe }}">{{ url_linktext }}</a>
-
-   <hr>
-    
-      {% for greeting in greetings %}
-      {% if greeting.author %}
-        <b>{{ greeting.author.email }}
-          {% if user and user.user_id() == greeting.author.identity %}
-            (You)
-          {% endif %}
-        </b> wrote:
-      {% else %}
-       An anonymous person wrote:
-      {% endif %}
-      <blockquote>{{ greeting.content }}</blockquote>
-    {% endfor %}
-</div>
 
 
           
